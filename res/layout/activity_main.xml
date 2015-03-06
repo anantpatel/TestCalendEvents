@@ -9,12 +9,25 @@
     tools:context="com.example.testcalendevents.MainActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
-<Button android:id="@+id/btnStartService"
-   android:layout_width="fill_parent"
-   android:layout_height="wrap_content"
-   android:text="broadcast_intent"
-   android:onClick="broadcastIntent"/>
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="broadcastIntent"
+        android:text="broadcast_intent" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:onClick="broadcastIntentReminder"
+        android:text="broadcast_Reminder Intent" />
+
 </RelativeLayout>
